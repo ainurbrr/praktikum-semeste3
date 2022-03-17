@@ -1,0 +1,28 @@
+Algoritma rotasi_matriks_180_derajat
+
+Deklarasi
+ordo : Integer //program meminta inputan ordo kepada user dan meminta inputan tiap index matriks
+matriks : array[][] //untuk menyimpan index matriks yang diinputkan oleh user
+b : integer //mendeklarasikan baris dalam array
+k : integer //mendeklarasikan kolom dalam array
+
+Deskripsi
+input(ordo)
+matriks[ordo][ordo] //deklarasi matriks sepanjang ordo
+//meminta input elemen matriks
+for (b = 0; b < ordo; b++){ //perulangan untuk meminta input baris
+    for (k = 0; k < ordo; k++){ //perulangan untuk meminta input kolom
+        output("Masukkan nilai elemen matriks baris ke "+(b+1)+" kolom ke "+(k+1)+" : ")
+        input (matriks[b][k])
+    }
+}
+
+//memanggil method rotate180 dari class yang berisi fungsi yang isinya
+//mencetak array yang dimulai dari index baris terakhir dan index kolom terakhir
+for (int b = matriks.length-1; b >= 0; b--){ //perulangan untuk mencetak baris dari terakhir
+     for (int k = matriks.length-1; k >= 0; k--){ //perulangan untuk mencetak kolom dari terakhir
+          output(matriks[b][k]+" ")
+     }
+     output(enter)
+}
+

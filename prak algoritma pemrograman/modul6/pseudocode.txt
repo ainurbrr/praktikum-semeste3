@@ -1,0 +1,39 @@
+pseudocode implementasi algoritma brute force
+
+Deklarasi
+array : integer array[] //variabel array
+max : integer //untuk menyimpan nilai maximum
+min : integer //untuk menyimpan nilai minimum
+find : integer //variabel untuk nilai yang dicari
+
+deskripsi
+
+method getMax(int[] array){
+     int max=array[0];
+     for (int i=0; i< array.length; i++){//perulangan untuk mencari nilai maximum dengan cara cek satu persatu
+      	if (array[i]>max){//membandingkan nilai array[i] dengan max yang sebelumnya untuk mencari nilai max
+          	max<-array[i];//jika array[i] lebih besar maka masukkan ke variabel max
+      	}
+     }
+     output->return max;//mengembalikan nilai max
+}
+
+method getMin (int[] array){
+     int min=array[0];
+     for (int i=0; i< array.length; i++){//perulangan untuk mencari nilai minimum dengan cara cek satu persatu
+      	if (array[i]<min){//membandingkan nilai array[i] dengan min yang sebelumnya untuk mencari nilai min
+          	min<-array[i];//jika array[i] lebih kecil maka masukkan ke variabel min
+      	}
+     }
+     output->return min;//mengembalikan nilai min
+}
+
+method linearSearch(int[] array, int find){
+        for (int i=0; i<array.length; i++){//perulangan mulai dari index ke0 sampai index terakhir untuk menemukan nilai yang dicari
+            if (find==array[i]){//bandingkan nilai yang dicari dengan array index ke-i
+                output->(array[i]+" ditemukan diindex "+i); //menampilkan nilai di index jika sudah ditemukan
+		return // keluar dan mengembalikan nilai
+            }
+        }
+	output->("elemen tidak ditemukan");//ditampilkan jika elemen tidak ditemukan.
+}
